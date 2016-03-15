@@ -6,7 +6,7 @@ module.exports = {
   devtool: 'eval',
 
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
+    'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
     './js/client.js'
   ],
@@ -29,7 +29,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx$/,
-        loader: 'react-hot!babel',
+        loader: 'react-hot!babel?presets[]=es2015,presets[]=stage-0,presets[]=react',
         include: path.join(__dirname, 'src')},
       { test: /\.js$/,
         loader: 'babel',
