@@ -2,7 +2,7 @@ import React from "react";
 
 import { IndexLink, Link } from "react-router";
 
-
+import Project from "../components/Project";
 
 export default class Projects extends React.Component {
   constructor(props) {
@@ -14,16 +14,20 @@ export default class Projects extends React.Component {
     }
 
   render() {
+        const array = [{pic: 'something', discription: 'something'}, {pic: 'pic2', discription: 'something else'}]
 
 
     return (
       <div>
-        <h1>Projects!</h1>
+
         <Link to="/" >
-            <button className="test" type="button">
-              Home
-            </button>
+
+              <img src='../../public/images/rightArrow.png' />
+
         </Link>
+
+      <Project/>
+
       </div>
 
     );

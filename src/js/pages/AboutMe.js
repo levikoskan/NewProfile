@@ -12,15 +12,15 @@ export default class AboutMe extends React.Component {
 
 
   render() {
-    const linkStyle = { textDecoration: 'none'};
+
 
     return (
       <div>
-        <h1>About Me</h1>
-        <Link to="/" style={linkStyle}>
-            <button className="test" type="button">
-              Home
-            </button>
+
+        <Link to="/" >
+
+              <img src='../../public/images/leftArrow.png' />
+
         </Link>
       </div>
     );

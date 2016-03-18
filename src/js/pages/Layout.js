@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-
-
+import Footer from "../components/layout/Footer"
 
 export default class Layout extends React.Component {
   render() {
@@ -10,21 +9,10 @@ export default class Layout extends React.Component {
 
 
     return (
+      <div className="container" >
+        {this.props.children}
 
-
-
-        <div className="container" >
-
-
-
-              {this.props.children}
-
-
-
-        </div>
-
-
-
+      </div>
     );
   }
 }

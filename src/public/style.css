@@ -1,28 +1,37 @@
 
-#app{
-  height: 100%;
+ul{
+  list-style-type: none;
 }
-.container{
-  height: 100%;
-  width: 100%;
+.homeBackGround{
+  background-image: url(./images/theBeach.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.homeContainer{
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1050px){
+  .homeContainer{
+  flex-wrap: wrap;
 }
 
-.homeBackGround{
-  background-image: url(theBeach.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 .projectsBackGround{
-  background-image: url(bambooPage.png);
+  background-image: url(./images/sandCastlePage.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+.projectImg{
+  height: 400px;
+  width: 400px;
+}
 .aboutBackGround{
-  background-image: url(tikiPage.png);
+  background-image: url(./images/tikiPage2.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
