@@ -9,6 +9,9 @@ ul{
   background-attachment: fixed;
   background-size: cover;
 }
+.navCloud{
+
+}
 .homeContainer{
   display: flex;
   flex-direction: row;

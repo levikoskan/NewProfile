@@ -19,11 +19,12 @@ export default class Featured extends React.Component {
 
 
   render() {
-
-
     return (
       <div>
-        <img src='../../public/images/nameText.png'/>
+        <div>
+          <img src='../../public/images/nameText.png'/>
+          <img className="navCloud" src='../../public/images/navCloud.png'/>
+        </div>
         <div className="homeContainer">
           <Link to="projects">
 

@@ -14,7 +14,6 @@ export default class Projects extends React.Component {
     }
 
   render() {
-        const array = [{pic: 'something', discription: 'something'}, {pic: 'pic2', discription: 'something else'}]
 
 
     return (

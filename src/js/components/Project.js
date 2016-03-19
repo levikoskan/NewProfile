@@ -1,8 +1,5 @@
 import React from "react";
 
-
-
-var key;
 export default class Project extends React.Component {
    constructor() {
     super();
@@ -11,17 +8,14 @@ export default class Project extends React.Component {
         submitted: true,
         picIndex: null
       }
-  }
+    }
 
   newState(i, event) {
-
     this.setState({
       submitted: !this.state.submitted,
       picIndex: i
     });
-
   }
-
 
   render() {
     const path = '../../public/images/projects/'
@@ -46,12 +40,9 @@ export default class Project extends React.Component {
       }]
       const index = this.state.picIndex;
 
-// onClick={}
-
     if (this.state.submitted){
       return(
       <div>
-
          {projects.map((projects, i) => {
             return(
               <ul key={i}>
@@ -63,7 +54,6 @@ export default class Project extends React.Component {
             )
             }, this)
           }
-
       </div>
       );
     }else{
