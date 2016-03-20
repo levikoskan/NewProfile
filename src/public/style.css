@@ -12,24 +12,36 @@ ul{
   background-attachment: fixed;
   background-size: cover;
 }
-.nameImg{
-  position: absolute;
-}
-.navCloud{
-  cursor: pointer;
-}
-.homeContainer{
+.skyContainer{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+#nameImg{
+  margin-left: 70px;
+  /*margin-top: -20px;*/
+}
+#navCloud{
+  height: 175px;
+  width: 275px;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.beachContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0px;
 }
 #tikiImg{
   width: 500px;
   height: 400px;
 }
 #castleImg{
-  width: 340px;
-  height: 400px;
+  width: 350px;
+  height: 375px;
 
 }
 /*nav bar*/
@@ -46,11 +58,11 @@ ul{
   right: -250px;
   position: absolute;
   z-index: 2;
-  top: 0;
+  top: 25%;
   width: 250px;
   height: 290px;
   box-sizing: border-box;
-  border-radius: 0 0 0 20px;
+  border-radius: 20px 0 0 20px;
   -moz-box-sizing: border-box;
   -webkit-transition: -webkit-transform ease 250ms;
   -moz-transition: -webkit-transform ease 250ms;
@@ -90,9 +102,13 @@ ul{
 /*end of nav bar*/
 
 @media (max-width: 1050px){
-  .homeContainer{
+  .skyContainer{
   flex-wrap: wrap;
-}
+  justify-content: center;
+  }
+  .beachContainer{
+  flex-wrap: wrap;
+  }
 }
 /*end of home page*/
 
