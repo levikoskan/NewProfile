@@ -20,7 +20,7 @@ ul{
 }
 #nameImg{
   height: 120px;
-  margin-left: 100px;
+  margin-left: 60px;
   margin-top: 30px;
 }
 #webImg{
@@ -57,6 +57,7 @@ ul{
   -webkit-transform: translate3d(-250px, 0, 0);
   -o-transform: translate3d(-250px, 0, 0);
   -moz-transform: translate3d(-250px, 0, 0);
+  display: initial;
 }
 
 .menu > div {
@@ -108,6 +109,9 @@ ul{
 /*end of nav bar*/
 
 @media (max-width: 1050px){
+  body{
+    overflow: scroll;
+  }
   .skyContainer{
   flex-wrap: wrap;
   justify-content: center;
@@ -115,7 +119,23 @@ ul{
   .beachContainer{
   flex-wrap: wrap;
   }
+  .menu > div {
+    display: none;
+  }
 }
+@media (max-width: 400px){
+  .homeBackGround{
+    background-position: left;
+  }
+  #nameImg{
+    width: 350px;
+    margin-left: 0px;
+  }
+  .menu > div {
+    top: 50%;
+  }
+}
+
 /*end of home page*/
 
 /*projects page*/

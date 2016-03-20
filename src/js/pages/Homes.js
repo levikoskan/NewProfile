@@ -51,22 +51,24 @@ export default class Featured extends React.Component {
             </div>
 
         </div>
-        <div className="skyContainer">
-          <img id='nameImg' src='../../public/images/nameText.png'/>
+        <div className="homeContainer">
+          <div className="skyContainer">
+            <img id='nameImg' src='../../public/images/nameText.png'/>
 
-          <img id="navCloud" onClick={this.show.bind(this)} src='../../public/images/navCloud.png'/>
-        </div>
-        <div className="beachContainer">
-          <Link to="projects">
+            <img id="navCloud" onClick={this.show.bind(this)} src='../../public/images/navCloud.png'/>
+          </div>
+          <div className="beachContainer">
+            <Link to="projects">
 
-              <img id='castleImg' src='../../public/images/sandCastle_Sign.png' />
+                <img id='castleImg' src='../../public/images/sandCastle_Sign.png' />
 
-          </Link>
-          <Link to="about" >
+            </Link>
+            <Link to="about" >
 
-              <img id='tikiImg' src='../../public/images/tiki_Levi_Sign.png' />
+                <img id='tikiImg' src='../../public/images/tiki_Levi_Sign.png' />
 
-          </Link>
+            </Link>
+          </div>
         </div>
       </div>
     );
