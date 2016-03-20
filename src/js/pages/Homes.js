@@ -53,6 +53,7 @@ export default class Featured extends React.Component {
         </div>
         <div className="skyContainer">
           <img id='nameImg' src='../../public/images/nameText.png'/>
+
           <img id="navCloud" onClick={this.show.bind(this)} src='../../public/images/navCloud.png'/>
         </div>
         <div className="beachContainer">
