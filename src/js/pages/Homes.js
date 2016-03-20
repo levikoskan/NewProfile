@@ -32,6 +32,7 @@ export default class Featured extends React.Component {
     // }
 
   render() {
+    const path = './public/images/links/'
     return (
       <div>
         <div>
@@ -41,24 +42,28 @@ export default class Featured extends React.Component {
                 <MenuItem >Contact Me</MenuItem>
                 <MenuItem >Resume</MenuItem>
                 <MenuItem >Technologies Used</MenuItem>
-                <div className="menu-item" onClick={this.show.bind(this)}>Exit</div>
+                <div className="menu-item" id="bottomBar">
+                  <a href="https://www.linkedin.com/in/levikoskan"><img className="linkIcon" src={path +"linkedin.png"}/></a>
+                  <a href="https://github.com/levikoskan"><img className="linkIcon" src={path +"github.png"}/></a>
+                  <a href="https://about.me/levikoskan"><img className="linkIcon" src={path +"aboutMe.png"}/></a>
+                </div>
               </div>
             </div>
 
         </div>
         <div>
-          <img src='../../public/images/nameText.png'/>
+          <img id='nameImg' src='../../public/images/nameText.png'/>
           <img className="navCloud" onClick={this.show.bind(this)} src='../../public/images/navCloud.png'/>
         </div>
         <div className="homeContainer">
           <Link to="projects">
 
-              <img src='../../public/images/sandCastle_Sign.png' />
+              <img id='castleImg' src='../../public/images/sandCastle_Sign.png' />
 
           </Link>
           <Link to="about" >
 
-              <img src='../../public/images/tiki_Levi_Sign.png' />
+              <img id='tikiImg' src='../../public/images/tiki_Levi_Sign.png' />
 
           </Link>
         </div>
