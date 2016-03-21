@@ -115,7 +115,6 @@ ul{
   .beachContainer{
   flex-wrap: wrap;
   }
-
 }
 @media (max-width: 400px){
   .homeBackGround{
@@ -211,15 +210,16 @@ ul{
 .aboutLeviTxt{
   padding: 5px;
   text-align: center;
-  background-color: rgba(111, 188, 214, .75);
+  background-color: rgba(230, 184, 156, .75);
   border-radius: 10px;
-  border: 2px solid rgba(248, 253, 255, .5);
+  border: 2px solid rgba(234, 210, 172, .75);
+}
+#clickTxt{
+  display: flex;
+  align-items: center;
 }
 .aboutMeWrapper > h3{
   align-self: center;
-}
-.leviHeader{
-
 }
 .aboutMeImgWrapper{
   margin-top: 10px;
@@ -235,14 +235,28 @@ ul{
 .aboutMeImgText{
   width: 225px;
   text-align: center;
-  background-color: rgba(111, 188, 214, .85);
+  background-color: rgba(66, 129, 164, .85);
   border-radius: 10px;
-  border: 2px solid rgba(248, 253, 255, .5);
+  border: 2px solid rgba(156, 175, 183, .5);
+  padding: 0 2px;
 }
 #aboutMeArrow{
   margin-top: -28px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 1050px){
+  .aboutMeWrapper{
+  width: 100%;
+  padding-left: 0px;
+}
+  .aboutLeviTxtWrapper{
+  width: 80%;
+}
+  #clickTxt{
+    width: 100%;
+    justify-content: center;
+  }
 }
 /*end of about page*/
 

@@ -39,7 +39,9 @@ export default class AboutMe extends React.Component {
             <h2 className="">Why be a web developer?</h2>
             <p className="aboutLeviTxt">I have appreciation and fascination with technology and how it improves the human condition. I love puzzles and don’t know of a greater satisfaction then finding the solution to a hard, complex problem. I’ve always been the most excited when I’m involved with projects that others will get to use and interact with. The most exciting aspect of this career is that I can never learn it all. I love learning and throughout my whole career I will have to learn new technologies and continue my self-improvement.</p>
           </div>
-        <h3> Click an image and read my story</h3>
+        <div id="clickTxt">
+          <h3> Click an image and read my story</h3>
+        </div>
           {levi.map((levi, i) => {
             return(
               <div key={i} className="aboutMeImgWrapper">
