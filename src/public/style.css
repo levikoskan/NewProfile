@@ -145,13 +145,43 @@ ul{
   background-attachment: fixed;
   background-size: cover;
 }
+.projectContainer{
+}
+.projectHomeContainer{
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#projectParagraph{
+  width: 40%;
+}
+.projectImgWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+  width: 300px;
+}
 .projectImg{
-  height: 100px;
-  width: 100px;
+  height: 80%;
+  width: 98%;
 }
 #projectArrow{
   padding-top: 60px;
   margin-right: -40px;
+}
+.singleProjectWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.singleProjectImgs{
+  height: 300px;
+  width: 370px;
 }
 /*end of projects page*/
 .arrowImg {
@@ -165,6 +195,54 @@ ul{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+.aboutMeWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 93%;
+  padding-left: 50px;
+  padding-top: 27px;
+}
+.aboutLeviTxtWrapper{
+  width: 42%;
+}
+.aboutLeviTxt{
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(111, 188, 214, .75);
+  border-radius: 10px;
+  border: 2px solid rgba(248, 253, 255, .5);
+}
+.aboutMeWrapper > h3{
+  align-self: center;
+}
+.leviHeader{
+
+}
+.aboutMeImgWrapper{
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.aboutMeImg{
+  height: 225px;
+  width: 225px;
+  border-radius: 20%;
+}
+.aboutMeImgText{
+  width: 225px;
+  text-align: center;
+  background-color: rgba(111, 188, 214, .85);
+  border-radius: 10px;
+  border: 2px solid rgba(248, 253, 255, .5);
+}
+#aboutMeArrow{
+  margin-top: -28px;
+  display: flex;
+  justify-content: center;
 }
 /*end of about page*/
 
