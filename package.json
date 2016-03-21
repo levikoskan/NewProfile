@@ -44,12 +44,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/levikoskan/reactDeployTest.git"
+    "url": "git+https://github.com/levikoskan/NewProfile.git"
   },
   "author": "me",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/levikoskan/propertypredictor/issues"
-  },
-  "homepage": "https://github.com/levikoskan/propertypredictor#readme"
+
+  }
+
 }

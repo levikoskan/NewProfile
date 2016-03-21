@@ -1,5 +1,5 @@
 body{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 ul{
   list-style-type: none;
@@ -48,7 +48,6 @@ ul{
 #castleImg{
   width: 350px;
   height: 375px;
-
 }
 /*nav bar*/
 .menu > div.visible{
@@ -57,7 +56,7 @@ ul{
   -webkit-transform: translate3d(-250px, 0, 0);
   -o-transform: translate3d(-250px, 0, 0);
   -moz-transform: translate3d(-250px, 0, 0);
-  display: initial;
+
 }
 
 .menu > div {
@@ -109,9 +108,6 @@ ul{
 /*end of nav bar*/
 
 @media (max-width: 1050px){
-  body{
-    overflow: scroll;
-  }
   .skyContainer{
   flex-wrap: wrap;
   justify-content: center;
@@ -119,13 +115,16 @@ ul{
   .beachContainer{
   flex-wrap: wrap;
   }
-  .menu > div {
-    display: none;
-  }
+
 }
 @media (max-width: 400px){
   .homeBackGround{
     background-position: left;
+  }
+  #castleImg{
+  width: 295px;
+  height: 355px;
+  padding-right: 150px;
   }
   #nameImg{
     width: 350px;
@@ -147,11 +146,18 @@ ul{
   background-size: cover;
 }
 .projectImg{
-  height: 400px;
-  width: 400px;
+  height: 100px;
+  width: 100px;
+}
+#projectArrow{
+  padding-top: 60px;
+  margin-right: -40px;
 }
 /*end of projects page*/
-
+.arrowImg {
+  display: flex;
+  justify-content: flex-end;
+}
 /*about page*/
 .aboutBackGround{
   background-image: url(./images/tikiPage2.png);

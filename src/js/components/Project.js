@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router";
+
 export default class Project extends React.Component {
    constructor() {
     super();
@@ -43,17 +45,24 @@ export default class Project extends React.Component {
     if (this.state.submitted){
       return(
       <div>
-         {projects.map((projects, i) => {
-            return(
-              <ul key={i}>
-                <li>
-                 <img className="projectImg" onClick={this.newState.bind(this,i)} src={projects.pics[0]}/>
-                </li>
-                <li>{projects.discription}</li>
-              </ul>
-            )
-            }, this)
-          }
+        <div>
+           {projects.map((projects, i) => {
+              return(
+                <ul key={i}>
+                  <li>
+                   <img className="projectImg" onClick={this.newState.bind(this,i)} src={projects.pics[0]}/>
+                  </li>
+                  <li>{projects.discription}</li>
+                </ul>
+              )
+              }, this)
+            }
+          </div>
+          <div className='arrowImg'>
+            <Link to="/" >
+              <img id="projectArrow" src='../../public/images/rightArrow.png' />
+            </Link>
+          </div>
       </div>
       );
     }else{
