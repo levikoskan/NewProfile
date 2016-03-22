@@ -238,7 +238,9 @@ ul{
   background-color: rgba(66, 129, 164, .85);
   border-radius: 10px;
   border: 2px solid rgba(156, 175, 183, .5);
-  padding: 0 2px;
+}
+.aboutMeImgText > p{
+  padding: 0 8px;
 }
 #aboutMeArrow{
   margin-top: -28px;

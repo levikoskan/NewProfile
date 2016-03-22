@@ -20,7 +20,7 @@ export default class AboutMe extends React.Component {
       { pic: path +'utahSt.jpg',
         info: 'I grew up in the beautiful mountains of Cache Valley. I stayed in the valley when I decided to pursue higher education at Utah State University. I graduated with a B.S. in Psychology.',},
       { pic:path +'levilex.jpg',
-        info: 'This is my wife Lexie. We laugh a lot. When I start nerding out too much she brings be back. We got married on June 13th, 2015. She is the second coolest person I have ever known. Me being the first.This is my wife Lexie. We laugh a lot. When I start nerding out too much she brings be back. We got married on June 13th, 2015. She is the best teammate and friend. She does not enjoy listening to me talk about code. I do it anyways.',},
+        info: 'This is my wife Lexie. We laugh a lot. When I start nerding out too much she brings be back. We got married on June 13th, 2015. She is the best teammate and friend. She does not enjoy listening to me talk about code. I do it anyways.',},
       { pic: path +'football.jpg',
         info: 'I got the chance to walk-on to USU’s football team. After two years I earned a scholarship. By the end of my football career I had received all conference honors, been nominated for national awards, and been elected to the leadership committee by my peers.',},
       { pic: path +'friends.jpg',
@@ -37,7 +37,7 @@ export default class AboutMe extends React.Component {
         <div className="aboutMeWrapper">
           <div className="aboutLeviTxtWrapper">
             <h2 className="">Why be a web developer?</h2>
-            <p className="aboutLeviTxt">I have appreciation and fascination with technology and how it improves the human condition. I love puzzles and don’t know of a greater satisfaction then finding the solution to a hard, complex problem. I’ve always been the most excited when I’m involved with projects that others will get to use and interact with. The most exciting aspect of this career is that I can never learn it all. I love learning and throughout my whole career I will have to learn new technologies and continue my self-improvement.</p>
+            <p className="aboutLeviTxt">I have appreciation and fascination with technology and how it improves the human condition. I love puzzles and don’t know of a greater satisfaction than finding the solution to a hard, complex problem. I’ve always been the most excited when I’m involved with projects that others will get to use and interact with. The most exciting aspect of this career is that I can never learn it all. I love learning and throughout my whole career I will have to learn new technologies and continue my self-improvement.</p>
           </div>
         <div id="clickTxt">
           <h3> Click an image and read my story</h3>
