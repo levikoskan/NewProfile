@@ -1,6 +1,8 @@
 body{
   overflow-x: hidden;
+
 }
+
 li{
   list-style-type: none;
   display: inline-block;
@@ -118,16 +120,13 @@ li{
   }
   .beachContainer{
   flex-wrap: wrap;
-  margin-top: 240px;
   }
 }
 @media (max-width: 400px){
   .homeBackGround{
     background-position: left;
   }
-  .beachContainer{
-    margin-top: 0px;
-  }
+
   #castleImg{
   width: 295px;
   height: 355px;
