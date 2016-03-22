@@ -16,7 +16,9 @@ export default class Projects extends React.Component {
 
     return (
       <div className='projectContainer'>
-        <h2>My Projects</h2>
+        <div className='projectsTitle'>
+          <h1>My Projects</h1>
+        </div>
         <Project/>
       </div>
 
