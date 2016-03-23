@@ -5,6 +5,12 @@ li{
   list-style-type: none;
   display: inline-block;
 }
+p{
+  font-family: 'Merriweather', serif;
+}
+h1{
+  font-family: 'Courgette', cursive;
+}
 /*home page*/
 .homeBackGround{
   background-image: url(./images/theBeach.png);
@@ -241,7 +247,7 @@ li{
   text-align: center;
   background-color: rgba(230, 184, 156, .5);
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 5px 15px;
 }
 .projectImgWrapper{
   display: flex;
@@ -251,7 +257,7 @@ li{
   height: 270px;
   width: 300px;
   cursor: pointer;
-  padding-top: 20px;
+  padding-top: 28px;
 }
 .projectImgWrapper > p{
   text-align: center;

@@ -33,7 +33,7 @@ export default class Project extends React.Component {
       {
         pics:[path +'toDoHome.png',path + 'toDoLogin.png',path + 'toDoList.png'],
         title: '8-bit To-Do',
-        discription: 'Users can make a to do list and be rewarded points upon completion.',
+        discription: 'Users can make a to do list with tasks and be rewarded points upon completion of each task.',
         info: 'Two other people and myself decided to create a game themed to-do list. The to-do list included the ability to add multiple lists and multiple tasks on each list. Also, a user could give each task a point value with the expectation of collecting those points once the task was complete. My team and I built out our own API to consume as we decided to make this application single paged. The application has user authentication and persistent data.',
         techUsed:['HTML', 'CSS', 'Bootstrap', 'Node.js', 'Experss', 'Mongo DB', 'Mongoose', 'Ajax for API calls', 'PassPort for User Auth', 'Handlebars library', 'jQuery'],
         href: 'https://eight-bit-to-do.herokuapp.com/'
@@ -88,7 +88,7 @@ export default class Project extends React.Component {
             <h2>{projects[index].title}</h2>
           </div>
           <div className="titleNTxtWrapper">
-            <div id="projectDiscription">{projects[index].info}</div>
+            <p id="projectDiscription">{projects[index].info}</p>
           </div>
           <div className="singleProjectWrapper">
             {projects[index].pics.map(function(pics, i){
