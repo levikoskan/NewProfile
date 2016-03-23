@@ -19,7 +19,7 @@ export default class AboutMe extends React.Component {
     const levi =[
       { pic: path +'utahSt.jpg',
         info: 'I grew up in the beautiful mountains of Cache Valley. I stayed in the valley when I decided to pursue higher education at Utah State University. I graduated with a B.S. in Psychology.',},
-      { pic:path +'levilex.jpg',
+      { pic:path +'levilex.png',
         info: 'This is my wife Lexie. We laugh a lot. When I start nerding out too much she brings be back. We got married on June 13th, 2015. She is the best teammate and friend. She does not enjoy listening to me talk about code. I do it anyways.',},
       { pic: path +'football.jpg',
         info: 'I got the chance to walk-on to USU’s football team. After two years I earned a scholarship. By the end of my football career I had received all conference honors, been nominated for national awards, and been elected to the leadership committee by my peers.',},
