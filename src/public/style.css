@@ -272,6 +272,10 @@ li{
     background-color: rgba(104, 201, 243, .5);
     border-radius: 10px;
   }
+.projectLink{
+  text-decoration: none;
+  color: black;
+}
 .singleProjectImgs{
   height: 300px;
   width: 370px;

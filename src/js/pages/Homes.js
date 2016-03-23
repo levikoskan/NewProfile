@@ -57,7 +57,7 @@ export default class Featured extends React.Component {
 
   render() {
     const path = './public/images/links/'
-    const email = 'mailto:'+link+'?subject=Enjoyed%20visiting%20Levikoskan.com'
+    const email = 'mailto:'+link+'?subject=Enjoyed%20visiting%20your%20website'
 
     return (
       <div>

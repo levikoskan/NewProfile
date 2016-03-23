@@ -107,7 +107,7 @@ export default class Project extends React.Component {
             )}
             </div>
           </div>
-          <h2><a href={projects[index].href}>See it live</a></h2>
+          <h2><a className="projectLink" href={projects[index].href}>See it live</a></h2>
         </div>
       );
     }
