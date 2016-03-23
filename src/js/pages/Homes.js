@@ -2,11 +2,22 @@ import React from "react";
 
 import { Link } from "react-router";
 
-
-
 import MenuItem from "../components/MenuItem"
 
-
+var coded = "6l9nA1bAKx@S0Kn6.C10"
+var key = "6Q2BF3mNsLGuHKcvwOnZYIefoV0kb7XPMhC9TgxJt4lU15pAjRzEWryaDS8diq"
+var shift=coded.length
+var link=""
+for (var i=0; i<coded.length; i++) {
+  if (key.indexOf(coded.charAt(i))==-1) {
+  var ltr = coded.charAt(i)
+  link += (ltr)
+  }else {
+  ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+  link += (key.charAt(ltr))
+  }
+}
+// add reCAPTCHA for more security and avoid spammers
 
 export default class Featured extends React.Component {
   constructor() {
@@ -23,6 +34,7 @@ export default class Featured extends React.Component {
     componentWillUnmount() {
      document.body.removeEventListener('click', this.x);
    }
+
     show() {
       console.log("show")
       this.setState({
@@ -45,15 +57,17 @@ export default class Featured extends React.Component {
 
   render() {
     const path = './public/images/links/'
+    const email = 'mailto:'+link+'?subject=Enjoyed%20visiting%20Levikoskan.com'
+
     return (
       <div>
         <div>
             <div className="menu">
               <div className={(this.state.show ? "visible" : "")}>
 
-                <MenuItem >Contact Me</MenuItem>
+                <MenuItem ><a id="emailTxt" href={email} >Contact Me</a></MenuItem>
                 <div className="menu-item" onClick={this.showResume.bind(this)}><MenuItem>Resume</MenuItem></div>
-                <MenuItem >Technologies Used</MenuItem>
+
                 <div className="menu-item" id="bottomBar">
                   <a href="https://www.linkedin.com/in/levikoskan"><img className="linkIcon" src={path +"linkedin.png"}/></a>
                   <a href="https://github.com/levikoskan"><img className="linkIcon" src={path +"github.png"}/></a>

@@ -96,14 +96,19 @@ li{
   -moz-box-sizing: border-box;
   color: white;
 }
+#emailTxt{
+  color: inherit;
+  text-decoration: inherit;
+}
 #bottomBar{
   display: flex;
   justify-content: center;
   border-bottom: none;
+  padding-top: 30px;
 }
 .linkIcon{
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   margin-left: 10px;
 }
 /*end of nav bar*/
