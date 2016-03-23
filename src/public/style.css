@@ -58,17 +58,17 @@ h1{
 }
 /*nav bar*/
 .menu > div.visible{
-  transform: translate3d(250px, 0, 0);
-  -ms-transform: translate3d(250px, 0, 0);
-  -webkit-transform: translate3d(250px, 0, 0);
-  -o-transform: translate3d(250px, 0, 0);
-  -moz-transform: translate3d(250px, 0, 0);
+  transform: translate3d(-250px, 0, 0);
+  -ms-transform: translate3d(-250px, 0, 0);
+  -webkit-transform: translate3d(-250px, 0, 0);
+  -o-transform: translate3d(-250px, 0, 0);
+  -moz-transform: translate3d(-250px, 0, 0);
 
 }
 
 .menu > div {
   background: rgba(18, 108, 161, 0.75);
-  left: -250px;
+  right: -250px;
   position: absolute;
   z-index: 2;
   top: 25%;
@@ -157,9 +157,6 @@ h1{
 /*end of resume page*/
 
 @media (max-width: 1050px){
-  #appWrapper{
-    overflow-x: hidden;
-  }
   .homeBackGround{
     background-position: left;
   }
@@ -174,6 +171,17 @@ h1{
   margin-left: -90px;
   margin-top: 125px;
   }
+  .menu > div.visible{
+  transform: translate3d(250px, 0, 0);
+  -ms-transform: translate3d(250px, 0, 0);
+  -webkit-transform: translate3d(250px, 0, 0);
+  -o-transform: translate3d(250px, 0, 0);
+  -moz-transform: translate3d(250px, 0, 0);
+  }
+.menu > div {
+  left: -250px;
+  border-radius: 0px 20px 20px 0px;
+}
   #resumeImgWrapper{
   height: 1000px;
   width: 700px;
