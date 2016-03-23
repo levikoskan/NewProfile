@@ -181,7 +181,7 @@ li{
   #castleImg{
   width: 295px;
   height: 355px;
-  padding-right: 150px;
+  padding-right: 20px;
   }
   #nameImg{
     width: 350px;
@@ -190,6 +190,20 @@ li{
   .menu > div {
     top: 50%;
   }
+  #resumeImgWrapper {
+    width: 378px;
+    margin-top: 120px;
+  }
+  #resumeImg {
+    height: 125%;
+  }
+.menuResume > div.visible{
+  transform: translate3d(797px, 0, 0);
+  -ms-transform: translate3d(797px, 0, 0);
+  -webkit-transform: translate3d(797px, 0, 0);
+  -o-transform: translate3d(797px, 0, 0);
+  -moz-transform: translate3d(797px, 0, 0);
+}
 }
 
 /*end of home page*/
