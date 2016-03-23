@@ -1,8 +1,6 @@
 body{
   overflow-x: hidden;
-
 }
-
 li{
   list-style-type: none;
   display: inline-block;
@@ -12,7 +10,7 @@ li{
   background-image: url(./images/theBeach.png);
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
 }
 .skyContainer{
@@ -110,6 +108,43 @@ li{
 }
 /*end of nav bar*/
 
+/*resume page*/
+#resumeImgWrapper{
+  height: 595px;
+  width: 772px;
+  overflow-y: scroll;
+}
+#resumeImg{
+  height: 200%;
+  width: 100%;
+}
+.menuResume > div.visible{
+  transform: translate3d(1050px, 0, 0);
+  -ms-transform: translate3d(1050px, 0, 0);
+  -webkit-transform: translate3d(1050px, 0, 0);
+  -o-transform: translate3d(1050px, 0, 0);
+  -moz-transform: translate3d(1050px, 0, 0);
+}
+
+.menuResume > div {
+  left: -800px;
+  position: absolute;
+  z-index: 2;
+  top: 1%;
+  -webkit-transition: -webkit-transform ease 700ms;
+  -moz-transition: -webkit-transform ease 700ms;
+  -ms-transition: -webkit-transform ease 700ms;
+  -o-transition: -webkit-transform ease 700ms;
+  transition: -webkit-transform ease 700ms;
+  -webkit-transition: transform ease 700ms;
+  -moz-transition: transform ease 700ms;
+  -ms-transition: transform ease 700ms;
+  -o-transition: transform ease 700ms;
+  transition: transform ease 700ms;
+}
+
+/*end of resume page*/
+
 @media (max-width: 1050px){
   .homeBackGround{
     background-position: left;
@@ -121,6 +156,22 @@ li{
   .beachContainer{
   flex-wrap: wrap;
   }
+  #castleImg{
+  margin-left: -90px;
+  margin-top: 125px;
+  }
+  #resumeImgWrapper{
+  height: 1000px;
+  width: 700px;
+  margin-top: 50px;
+  }
+  .menuResume > div.visible{
+  transform: translate3d(835px, 0, 0);
+  -ms-transform: translate3d(835px, 0, 0);
+  -webkit-transform: translate3d(835px, 0, 0);
+  -o-transform: translate3d(835px, 0, 0);
+  -moz-transform: translate3d(835px, 0, 0);
+}
 }
 @media (max-width: 400px){
   .homeBackGround{
@@ -356,35 +407,5 @@ li{
   }
 }
 /*end of about page*/
-
-#resumeImg{
-  height: 595px;
-  width: 550px;
-}
-.menuResume > div.visible{
-  transform: translate3d(1000px, 0, 0);
-  -ms-transform: translate3d(1000px, 0, 0);
-  -webkit-transform: translate3d(1000px, 0, 0);
-  -o-transform: translate3d(1000px, 0, 0);
-  -moz-transform: translate3d(1000px, 0, 0);
-}
-
-.menuResume > div {
-  left: -800px;
-  position: absolute;
-  z-index: 2;
-  top: 1%;
-  -webkit-transition: -webkit-transform ease 700ms;
-  -moz-transition: -webkit-transform ease 700ms;
-  -ms-transition: -webkit-transform ease 700ms;
-  -o-transition: -webkit-transform ease 700ms;
-  transition: -webkit-transform ease 700ms;
-  -webkit-transition: transform ease 700ms;
-  -moz-transition: transform ease 700ms;
-  -ms-transition: transform ease 700ms;
-  -o-transition: transform ease 700ms;
-  transition: transform ease 700ms;
-
-}
 
 

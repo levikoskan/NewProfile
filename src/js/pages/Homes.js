@@ -48,11 +48,11 @@ export default class Featured extends React.Component {
     return (
       <div>
         <div>
-            <div onClick={this.showResume.bind(this)} className="menu">
+            <div className="menu">
               <div className={(this.state.show ? "visible" : "")}>
 
                 <MenuItem >Contact Me</MenuItem>
-                <div className="menu-item" onClick={this.showResume.bind(this)}><MenuItem resumeFunc={this.showResume.bind(this)}>Resume</MenuItem></div>
+                <div className="menu-item" onClick={this.showResume.bind(this)}><MenuItem>Resume</MenuItem></div>
                 <MenuItem >Technologies Used</MenuItem>
                 <div className="menu-item" id="bottomBar">
                   <a href="https://www.linkedin.com/in/levikoskan"><img className="linkIcon" src={path +"linkedin.png"}/></a>
@@ -64,7 +64,7 @@ export default class Featured extends React.Component {
 
             <div className="menuResume">
               <div className={(this.state.resume ? "visible" : "")}>
-                <MenuItem><img id="resumeImg" src={path +"resume.png"}/></MenuItem>
+                <MenuItem><div id="resumeImgWrapper"><img id="resumeImg" src={path +"resume.png"}/></div></MenuItem>
               </div>
             </div>
 
