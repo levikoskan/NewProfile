@@ -53,7 +53,7 @@ export default class Project extends React.Component {
       <div>
         <div className='projectHomeContainer'>
           <div id="projectParagraph">
-            <p>On display are three projects that I’m the most proud of. I’m not proud because of how technically complex they are or how hard it was to make them. What makes me proud of these projects is that they represent my ability to learn. I was taught complex subjects in a short time and applied those concepts and was able to make working applications. While I continue to develop my craft and learn new technologies I hope you enjoy what’s on display here.</p>
+            <p>On display are three projects that I’m the most proud of. I’m not proud because of how technically complex they are or how hard it was to make them. What makes me proud of these projects is that they represent my ability to learn. I was taught complex subjects in a short time and applied those concepts to make working applications.</p>
           </div>
           <div className="clickTxt">
             <h3>Click a project to learn more about it</h3>

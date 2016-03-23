@@ -157,6 +157,9 @@ h1{
 /*end of resume page*/
 
 @media (max-width: 1050px){
+  #appWrapper{
+    overflow-x: hidden;
+  }
   .homeBackGround{
     background-position: left;
   }
